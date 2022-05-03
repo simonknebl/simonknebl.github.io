@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>House</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <img src="https://img.etimg.com/thumb/msid-11823464,width-640,resizemode-4,imgsize-44338/building-your-own-house-points-to-ponder.jpg">
+
+    </body>
+    <script>
+        function addcolor() {
+            var colors = ['cornflowerblue',
+                'orangered',
+                'darkblue',
+                'gold',
+                'tomato',
+                'slategray',
+                'tan',
+                'mediumpurple',
+                'sienna',
+                'forestgreen'
+            ];
+    
+            var elements = document.body.querySelectorAll('*');
+    
+            for (var i = 0; i <= elements.length; i++) {
+    
+                color = colors[Math.floor(Math.random() * colors.length)];
+                elements[i].style.backgroundColor = color;
+    
+            }
+        }
+    </script>
+</html>

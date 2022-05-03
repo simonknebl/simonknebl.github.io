@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>HTML COLOR TEMPLATE — HEAD BODY STYLE SCRIPT COMPILE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+</head>
+
+<body>
+    <p>WELCOME</p>
+    <h1>here</h1> 
+    <body data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
+    
+    
+    <label for="colorWell">Color:</label>
+    <input type="color" value="#555555" id="colorWell">
+    <h2>is</h2>
+    <i>html</i>
+  <br>
+  <i>
+<b>notepad</b>
+</i><br>
+
+
+<p style="color: rgb(0, 179, 134);">THIS PART THIS PART THIS PART<br>
+is being changable</p>
+
+
+
+    <script>
+        var colorWell;
+var defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+colorWell = document.querySelector("#colorWell");
+colorWell.value = defaultColor;
+colorWell.addEventListener("input", updateFirst, false);
+colorWell.addEventListener("change", updateAll, false);
+colorWell.select();
+}
+
+function updateFirst(event) {
+var p = document.querySelector("p");
+
+if (p) {
+p.style.color = event.target.value;
+}
+}
+
+function updateAll(event) {
+document.querySelectorAll("p").forEach(function(p) {
+p.style.color = event.target.value;
+});
+}
+
+    </script>
+
+
+</body>
+
+<hr>okidoki<hr>
+
+<strong>strong-hello</strong>
+<br>
+<a href="https://google.com">
+    <button><i>Link<br>menu1</i></button></a>
+<button><i>Link<br>menu2</i></button>
+<button><i>Link<br>menu3</i></button>
+
+<button>dsadsadsasda</button>
+
+<br>
+
+<a href="https://google.com">
+<br>
+<button>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/240px-Google_%22G%22_Logo.svg.png">
+</button>
+</a>
+
+</body>
+
+<script>
+    function addcolor() {
+        var colors = ['cornflowerblue',
+            'orangered',
+            'darkblue',
+            'gold',
+            'tomato',
+            'slategray',
+            'tan',
+            'mediumpurple',
+            'sienna',
+            'forestgreen'
+        ];
+
+        var elements = document.body.querySelectorAll('*');
+
+        for (var i = 0; i <= elements.length; i++) {
+
+            color = colors[Math.floor(Math.random() * colors.length)];
+            elements[i].style.backgroundColor = color;
+
+        }
+    }
+</script>
+
+</html>
